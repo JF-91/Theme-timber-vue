@@ -1,0 +1,31 @@
+@import '../base/variables';
+
+form {
+    background-color: $gray-coll-10; ;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+input {
+    background-color: $gray-normal-20;
+    outline: none;
+    padding: 10px 20px;
+    font-family: $font-paragraph;
+}
+
+label {
+    padding-left: 30px;
+    font-size: $font-text;
+    color: $gray-normal-90;
+}
+
+textarea {
+    background-color: $gray-normal-20;
+    outline: none;
+    padding: 10px 20px; 
+    font-family: $font-paragraph;
+}

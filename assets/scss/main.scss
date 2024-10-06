@@ -1,0 +1,19 @@
+//general
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/general';
+
+//components
+@import 'components/buttons';
+@import 'components/figures';
+@import 'components/forms';
+@import 'components/link-button';
+
+//layouts
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/navbar';
+
+//pages
+@import 'pages/home';

@@ -1,0 +1,106 @@
+@import '../base/variables';
+
+.btn-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    background-color: $gray-normal-90;
+    
+    color: $color-white;
+
+    &.is-gray{
+        background-color: $gray-normal-50;
+        color: $gray-warm-90;
+    }
+
+    &.has-blue-border{
+        border: 2px solid $borderBlue-clear;
+    }
+
+    &.has-purple-border{
+        border: 2px solid $borderPurple-clear;
+    }
+
+    &.has-magenta-border{
+        border: 2px solid $borderMagenta-clear;
+    }
+
+    &.has-yellow-border{
+        border: 2px solid $borderYellow-light;
+    }
+
+    &.has-green-border{
+        border: 2px solid $borderGreen-clear;
+
+        &:hover{
+            background-color: $gray-coll-80;
+        }
+    }
+}
+
+.btn-rectangle-normal {
+    width: 96px;
+    height: 32px;
+    flex-shrink: 0;
+    background-color: $gray-normal-100;
+    color: $color-white;
+
+    &.is-gray{
+        background-color: $gray-normal-50;
+        color: $gray-warm-90;
+    }
+
+    &.has-blue-border{
+        border: 1px solid $borderBlue-clear;
+    }
+
+    &.has-purple-border{
+        border: 1px solid $borderPurple-clear;
+    }
+
+    &.has-magenta-border{
+        border: 1px solid $borderMagenta-clear;
+    }
+
+    &.has-yellow-border{
+        border: 1px solid $borderYellow-light;
+    }
+
+    &.has-green-border{
+        border: 1px solid $borderGreen-clear;
+    }
+}
+
+.btn-rectangle-large {
+    width: 230px;
+    height: 32px;
+    flex-shrink: 0;
+    background-color: $gray-normal-100;
+    color: $color-white;
+
+    &.is-gray{
+        background-color: $gray-normal-50;
+        color: $gray-warm-90;
+    }
+
+    &.has-blue-border{
+        border: 1px solid $borderBlue-clear;
+    }
+
+    &.has-purple-border{
+        border: 1px solid $borderPurple-clear;
+    }
+
+    &.has-magenta-border{
+        border: 1px solid $borderMagenta-clear;
+    }
+
+    &.has-yellow-border{
+        border: 1px solid $borderYellow-light;
+    }
+
+    &.has-green-border{
+        border: 1px solid $borderGreen-clear;
+    }
+}

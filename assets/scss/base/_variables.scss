@@ -1,0 +1,135 @@
+// Archivo de variables
+//google fonts Barlow - Lato - Headving Letters Serif
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap');
+// fonts
+$font-barlow: 'Barlow', sans-serif;
+$font-lato: 'Lato', sans-serif;
+$font-headving: 'Hedvig Letters Serif', serif;
+$font-inter: 'Inter', sans-serif;
+
+
+// fonts family
+$font-text: $font-barlow;
+$font-headline: $font-headving;
+$font-sub-headline: $font-lato;
+$font-paragraph: $font-lato;
+
+// size-font
+$font-size-xl-large:128px;
+$font-size-large: 96px;
+$font-size-medium: 80px;
+$font-size-h1: 64px;
+$font-size-h2: 48px;
+$font-size-h3: 36px;
+$font-size-h4: 24px;
+$font-size-h5: 20px;
+$font-size-h6: 16px;
+$body-medium: 22px;
+$body-default: 20px;
+$body-small: 18px;
+$body-meta-small: 16px;
+
+// font color
+$font-color-normal: #222222;
+
+
+// margin and padding
+$spacing-small: 5px;
+$spacing-middle: 10px;
+$spacing-large: 20px;
+
+// Z-index
+$zindex-modal: 1000;
+$zindex-menu: 500;
+
+
+// Small tablets and large smartphones (landscape view)
+
+$screen-palm: 370px;
+
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Colors gray palette
+$gray-normal-100: #161616;
+$gray-normal-90: #262626;
+$gray-normal-80: #393939;
+$gray-normal-70: #525252;
+$gray-normal-60: #6f6f6f;
+$gray-normal-50: #8d8d8d;
+$gray-normal-40: #a8a8a8;
+$gray-normal-30: #c6c6c6;
+$gray-normal-20: #e0e0e0;
+$gray-normal-10: #f4f4f4;
+
+// Warm gray palette
+$gray-warm-100: #171414;
+$gray-warm-90: #272525;
+$gray-warm-80: #3c3838;
+$gray-warm-70: #565151;
+$gray-warm-60: #726e6e;
+$gray-warm-50: #8f8b8b;
+$gray-warm-40: #ada8a8;
+$gray-warm-30: #cac5c4;
+$gray-warm-20: #e5e0df;
+$gray-warm-10: #f7f3f2;
+
+// Coll gray palette
+$gray-coll-100: #121619;
+$gray-coll-90: #21272a;
+$gray-coll-80: #343a3f;
+$gray-coll-70: #4d5358;
+$gray-coll-60: #697077;
+$gray-coll-50: #878d96;
+$gray-coll-40: #a2a9b0;
+$gray-coll-30: #c1c7cd;
+$gray-coll-20: #dde1e6;
+$gray-coll-10: #f4f4f4;
+
+// Background
+
+$bgGrey: #E8E8E2;
+$bgBlack: #000000;
+$bgWhite: #f2f4f8;
+
+// Border
+
+$borderBlue-clear: #0043CE;
+$borderGreen-dark: #002D9C;
+$borderGreen-clear: #42BE65;
+$borderGreen-middle-dark: #0E6027;
+$borderGreen-dark: #005D5D;
+$borderPurple-clear: #A56EFF;
+$borderPurple-dark: #6929C4;
+$borderMagenta-clear: #9F1853;
+$borderBlue-middle-dark: #00539A;
+$borderYellow-light: #FDDC69;
+$borderGray-dark: #C6C6C6;
+
+
+//another color
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+
+//size no media querys
+
+.is-big {
+    width: 70%;
+}
+
+.is-middle {
+    width: 50%;
+}
+
+.is-small {
+    width: 30%;
+}

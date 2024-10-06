@@ -1,0 +1,11 @@
+/composer.lock
+/vendor/
+/wordpress/
+/node_modules/
+/.sass-cache/
+/.idea/
+/.vscode/
+/.DS_Store
+
+
+.phpunit.result.cache

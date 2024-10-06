@@ -1,0 +1,233 @@
+@import '../base/variables';
+
+.triangle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    
+
+    &::before {
+        postion: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        
+        border-bottom: 20px solid $borderYellow-light;  
+        border-left: 10px solid transparent;   
+        border-right: 10px solid transparent;  
+    }
+
+    &.is-purple {
+        &::before {
+            border-bottom: 20px solid $borderPurple-clear;
+        }
+    }
+
+    &.is-green-clear {
+        &::before {
+            border-bottom: 20px solid $borderGreen-clear;
+        }
+    }
+
+    &.is-magenta {
+        &::before {
+            border-bottom: 20px solid $borderMagenta-clear;
+        }
+    }
+}
+
+.square-border {
+    position: relative;
+    width: 15px;
+    height: 15px;
+
+    &.fill {
+        background-color: $borderYellow-light;
+        &.is-purple {
+            background-color: $borderPurple-clear;
+        }
+
+        &.is-green-clear {
+            background-color: $borderGreen-clear;
+        }
+
+        &.is-magenta {
+            background-color: $borderMagenta-clear;
+        }
+
+        &.is-blue {
+            background-color: $borderBlue-clear;
+        }
+    }
+
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid $borderYellow-light;
+        
+    }
+
+    &.is-purple {
+            &::before {
+                border: 2px solid $borderPurple-clear;
+            }
+        }
+
+        &.is-green-clear {
+            &::before {
+                border: 2px solid $borderGreen-clear;
+            }
+        }
+
+        &.is-magenta {
+            &::before {
+                border: 2px solid $borderMagenta-clear;
+            }
+        }
+}
+
+.circle-border {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    &.fill {
+        background-color: $borderYellow-light;
+        
+        &.is-purple {
+            background-color: $borderPurple-clear;
+        }
+
+        &.is-green-clear {
+            background-color: $borderGreen-clear;
+        }
+
+        &.is-magenta {
+            background-color: $borderMagenta-clear;
+        }
+
+        &.is-blue {
+            background-color: $borderBlue-clear;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid $borderYellow-light;
+    }
+
+    &.is-purple {
+            &::before {
+                border: 2px solid $borderPurple-clear;
+            }
+        }
+
+        &.is-green-clear {
+            &::before {
+                border: 2px solid $borderGreen-clear;
+            }
+        }
+
+        &.is-magenta {
+            &::before {
+                border: 2px solid $borderMagenta-clear;
+            }
+        }
+    }
+
+.close-form-x {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        left: 20px;
+        height: 32px;
+        width: 2px;
+        background-color:$gray-coll-100;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            background-color: $borderGreen-clear;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }	
+
+        &::after {
+            transform: rotate(45deg);
+            background-color: $gray-coll-90;
+            opacity: 0.9;
+        }
+    }
+}
+
+.triangle-border {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border: 2px solid $borderYellow-light;
+    border-right: none;
+    border-bottom: none;
+
+    &.fill {
+        background-color: $borderYellow-light;
+        &.is-purple {
+            background-color: $borderPurple-clear;
+        }
+
+        &.is-green-clear {
+            background-color: $borderGreen-clear;
+        }
+
+        &.is-magenta {
+            background-color: $borderMagenta-clear;
+        }
+
+        &.is-blue {
+            background-color: $borderBlue-clear;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        transform-origin: right bottom;				
+        width: 20px;
+        right: 1px;
+        
+        transform:rotate(-45deg) ;
+        border: 1px solid $borderYellow-light;
+    }
+}

@@ -1,0 +1,162 @@
+@import 'variables';
+@import 'mixins';
+
+html{
+  font-family: $font-inter;
+  font-size: $body-default;
+  background-color: #E8E8E2;
+  scroll-behavior: smooth;
+  
+  @include md {
+    font-size: $body-small;
+  }
+}
+
+
+// html elements
+
+footer, header, nav, section, main{
+    display: block;
+  }
+  
+  body{
+    line-height: 1;
+    color: $font-color-normal;
+  }
+  
+  ol, ul{
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: $body-default;
+    color: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  blockquote, q{
+    quotes: none;
+  }
+  
+  blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+  }
+  
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+img{
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+
+}
+
+.main-container {
+  width: 100%;
+  padding: 120px;
+
+  @include lg {
+    width: 100%;
+    padding: 60px;
+  }
+}
+
+.main-item-container-grid {
+  width: 100%;
+  padding: 60px;
+
+  &.is-white {
+    background-color: $bgWhite;
+    border-radius: 32px;
+  }
+}
+
+.headline {
+  font-size: $font-size-xl-large;
+  font-weight: 500;
+  line-height: 120%; //153.6px
+  letter-spacing: -2px; 
+
+  @include lg {
+    font-size: $font-size-large;
+  }
+
+  @include md {
+    font-size: $font-size-medium;
+  }
+
+  &.large{
+    font-size: $font-size-large;
+    @include lg {
+      font-size: $font-size-medium;
+    }
+  }
+
+  &.medium {
+    font-size: $font-size-medium;
+    @include lg {
+      font-size: $font-size-h2;
+    }
+  }
+  
+  &.h1 {
+    font-size: $font-size-h1;
+    @include lg {
+      font-size: $font-size-h2;
+    }
+  }
+
+  &.h2 {
+    font-size: $font-size-h2;
+    @include lg {
+      font-size: $font-size-h3;
+    }
+  }
+
+  &.h3 {
+    font-size: $font-size-h3;
+    @include lg {
+      font-size: $font-size-h4;
+    }
+  }
+}
+
+.grid-container-2c {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @include lg {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-container-3c {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @include xl {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+  @include md {
+    grid-template-columns: 1fr;
+  }
+}

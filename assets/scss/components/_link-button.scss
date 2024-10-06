@@ -1,0 +1,12 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.link-button-text {
+    display: block;
+    width: fit-content;
+    background-color: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    font-size: $font-size-h4;
+}
