@@ -15,17 +15,26 @@ class AboutPageMetabox
     public static function add_about_metabox()
     {
         // Asumiendo que la página "About" tiene el ID 2; ajusta esto según tu configuración
-        $post_id = 2; // Reemplaza 2 con el ID real de tu página "About"
+        $about_page = get_page_by_path('about');
+        if ($about_page) {
+            $post_id = $about_page->ID;
+        } else {
+            return;
+        }
 
-        add_meta_box(
-            'about_page_metabox', // ID único
-            __('About Page Fields', 'your-theme-textdomain'), // Título
-            [self::class, 'render_metabox'], // Callback para mostrar el contenido
-            'page', // Tipo de pantalla
-            'normal', // Contexto
-            'high', // Prioridad
-            ['post_id' => $post_id] // Argumentos adicionales
-        );
+        global $post;
+        if ($post && $post->ID == $post_id) {
+
+            add_meta_box(
+                'about_page_metabox', // ID único
+                __('About Page Fields', 'your-theme-textdomain'), // Título
+                [self::class, 'render_metabox'], // Callback para mostrar el contenido
+                'page', // Tipo de pantalla
+                'normal', // Contexto
+                'high', // Prioridad
+                ['post_id' => $post_id] // Argumentos adicionales
+            );
+        }
     }
 
     // Renderizar el contenido del metabox
@@ -37,6 +46,8 @@ class AboutPageMetabox
         $image = get_post_meta($post->ID, '_about_image', true);
         $button1 = get_post_meta($post->ID, '_about_button_1', true);
         $button2 = get_post_meta($post->ID, '_about_button_2', true);
+        $linkButton1 = get_post_meta($post->ID, '_about_link_button_1', true);
+        $linkButton2 = get_post_meta($post->ID, '_about_link_button_2', true);
 
         // Campo para el texto
         echo '<label for="about_text">' . __('Text', 'your-theme-textdomain') . '</label>';
@@ -44,22 +55,28 @@ class AboutPageMetabox
 
         // Campo para el textarea
         echo '<label for="about_textarea">' . __('Textarea', 'your-theme-textdomain') . '</label>';
-        echo '<textarea name="about_textarea" class="widefat">' . esc_textarea($textarea) . '</textarea>';
+        echo '<textarea name="about_textarea" class="widefat" rows="12" cols="100">' . esc_textarea($textarea) . '</textarea>';
 
         // Campo para la imagen
-        echo '<label for="about_image">' . __('Image', 'your-theme-textdomain') . '</label>';
-        echo '<input type="hidden" name="about_image" value="' . esc_attr($image) . '" class="widefat" id="about_image_field" width="100" height="100" />';
-        echo '<img id="about_image_preview" src="' . esc_url($image) . '" style="max-width: 100%; height: auto; margin-top: 10px;" />';
+        echo '<label for="about_image" style="display: flex;">' . __('Image', 'your-theme-textdomain') . '</label>';
+        echo '<input type="hidden" name="about_image" value="' . esc_attr($image) . '" class="widefat" id="upload_image_field" width="100" height="100" />';
+        echo '<img id="upload_image_preview" src="' . esc_url($image) . '" style="max-width: 100%; height: 300px; margin-top: 10px;" />';
 
         // Cambié el botón a tipo "button"
-        echo '<button type="button" class="button upload_image_button">' . __('Upload Image', 'your-theme-textdomain') . '</button>';
+        echo '<button type="button" class="button upload_image_button" style="display: flex;">' . __('Upload Image', 'your-theme-textdomain') . '</button>';
 
-        // Campos para los botones
+        // Campos para los botones y enlaces
         echo '<label for="about_button_1">' . __('Button 1', 'your-theme-textdomain') . '</label>';
         echo '<input type="text" name="about_button_1" value="' . esc_attr($button1) . '" class="widefat" />';
 
-        echo '<label for="about_button_2">' . __('Button 2', 'your-theme-textdomain') . '</label>';
+        echo '<label for="about_link_button_1">' . __('Link-button 1', 'your-theme-textdomain') . '</label>';
+        echo '<input type="text" name="about_link_button_1" value="' . esc_attr($linkButton1) . '" class="widefat" />';
+
+        echo '<label for="about_button_2">' . __('button 2', 'your-theme-textdomain') . '</label>';
         echo '<input type="text" name="about_button_2" value="' . esc_attr($button2) . '" class="widefat" />';
+
+        echo '<label for="about_link_button_2">' . __('Link-button 2', 'your-theme-textdomain') . '</label>';
+        echo '<input type="text" name="about_link_button_2" value="' . esc_attr($linkButton2) . '" class="widefat" />';
 
         // Nonce para verificar
         wp_nonce_field('save_about_page_fields', 'about_page_nonce');
@@ -97,6 +114,14 @@ class AboutPageMetabox
 
         if (isset($_POST['about_button_2'])) {
             update_post_meta($post_id, '_about_button_2', sanitize_text_field($_POST['about_button_2']));
+        }
+
+        if (isset($_POST['about_link_button_1'])) {
+            update_post_meta($post_id, '_about_link_button_1', sanitize_text_field($_POST['about_link_button_1']));
+        }
+
+        if (isset($_POST['about_link_button_2'])) {
+            update_post_meta($post_id, '_about_link_button_2', sanitize_text_field($_POST['about_link_button_2']));
         }
     }
 }

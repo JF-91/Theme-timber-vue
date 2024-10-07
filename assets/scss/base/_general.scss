@@ -65,6 +65,43 @@ img{
 
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 120px;
+  background-color: $bgWhite;
+
+  @include lg {
+    padding: 30px 60px;
+  }
+
+  a {
+    font-size: $font-size-medium;
+    font-weight: 500;
+    color: black;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+
+}
+
+.wrapper {
+  width: 100%;
+  padding: 120px;
+
+  @include lg {
+    padding: 60px;
+  }
+}
+
 .main-container {
   width: 100%;
   padding: 120px;

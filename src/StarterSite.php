@@ -113,7 +113,10 @@ class StarterSite extends Site
 
 		$context['menu']  = Timber::get_menu();
 		$context['site']  = $this;
-
+		$context['theme_url'] = get_template_directory_uri();
+		$context['site_url'] = site_url();
+		$context['custom_logo'] = get_custom_logo();
+		$context['menu_links'] = $this->get_menu_links("menu");
 		return $context;
 	}
 
@@ -141,15 +144,7 @@ class StarterSite extends Site
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support(
-			'html5',
-			array(
-				'comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
-			)
-		);
+
 
 		/*
 		 * Enable support for Post Formats.
@@ -169,9 +164,17 @@ class StarterSite extends Site
 			)
 		);
 
+		add_theme_support(
+			'custom-logo', 
+				array(
+					'height'      => 100,
+					'width'       => 400,
+					'flex-height' => true,
+					'flex-width'  => true,
+		));
+
 		add_theme_support('menus');
 	}
-
 
 	public function timber_get_posts()
 	{
@@ -179,19 +182,32 @@ class StarterSite extends Site
 		return $post;
 	}
 
-	public function timber_get_logo()
+	/**
+	 * Retrieves the links and their titles from the primary menu.
+	 *
+	 * This function fetches the menu items for the primary menu and returns an array
+	 * of links with their corresponding titles.
+	 *
+	 * @return array An array of associative arrays, each containing 'title' and 'url' keys.
+	 */
+	public function get_menu_links($menu_name)
 	{
+	
+		$menu = wp_get_nav_menu_items($menu_name);
+		$menu_links = [];
 
-		$logo_url = get_option('site_logo_url');
-
-		// Si la opción existe, devuelve la URL
-		if ($logo_url) {
-			return $logo_url;
+		if ($menu) {
+			foreach ($menu as $item) {
+				$menu_links[] = [
+					'title' => $item->title,
+					'url' => $item->url,
+				];
+			}
 		}
 
-		// Si no existe, devuelve null o una URL por defecto
-		return null;
+		return $menu_links;
 	}
+
 
 	public function get_excerpt($text, $length = 55)
 	{
@@ -200,6 +216,7 @@ class StarterSite extends Site
 		}
 		return substr($text, 0, $length) . '...';
 	}
+
 
 	/**
 	 * This is where you can add your own functions to twig.
@@ -215,7 +232,6 @@ class StarterSite extends Site
 		// $twig->addExtension( new Twig\Extension\StringLoaderExtension() );
 
 		$twig->addFilter(new \Twig\TwigFilter('post', [$this, 'timber_get_posts']));
-		$twig->addFilter(new \Twig\TwigFilter('logo', [$this, 'timber_get_logo']));
 
 		// Add dump() function to Twig, use only for debugging and delete in production
 		$twig->addFilter(new \Twig\TwigFilter('dump', 'dump'));
@@ -229,6 +245,10 @@ class StarterSite extends Site
 		$twig->addFunction(new \Twig\TwigFunction('site_url', 'site_url'));
 		$twig->addFunction(new \Twig\TwigFunction('wp_head', 'wp_head'));
 		$twig->addFunction(new \Twig\TwigFunction('wp_footer', 'wp_footer'));
+
+		// Agrega la función logo_url
+
+
 		return $twig;
 	}
 

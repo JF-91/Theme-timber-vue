@@ -26,8 +26,8 @@ function initializeMediaUploader() {
                     .get("selection")
                     .first()
                     .toJSON();
-                $("#about_image_field").val(attachment.url);
-                $("#about_image_preview").attr("src", attachment.url);
+                $("#upload_image_field").val(attachment.url);
+                $("#upload_image_preview").attr("src", attachment.url);
             });
 
             mediaUploader.open();

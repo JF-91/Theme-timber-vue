@@ -2,9 +2,19 @@
 
 {% block content %}
 
-<h1>{{ post.title }}</h1>
-<hr />
-<hello name="{{post.title}}"></hello>
 
+<separator></separator>
+
+<block-primary
+	headline="{{ about_text }}"
+	textarea="{{ about_textarea }}"
+	image="{{ about_image }}"
+	button-main="{{ about_button_1 }}"
+	button-secondary="{{ about_button_2 }}"
+	link-one={{ about_link_button_1 }}
+	link-two={{ about_link_button_2 }}></block-primary>
+
+
+<separator></separator>
 
 {% endblock %}

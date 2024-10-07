@@ -5,6 +5,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development", // Modo de desarrollo
+  devtool: "eval-source-map", // Mejora la depuración
+  optimization: {
+    minimize: false, // Desactiva la minificación
+    usedExports: false, // No aplica tree shaking
+  },
   entry: "./assets/scripts/site.js", // Archivo de entrada principal
   output: {
     filename: "bundle.js", // Nombre del archivo de salida
@@ -31,23 +36,23 @@ module.exports = {
         use: [
           //   "style-loader", // Inyecta CSS en la página
           MiniCssExtractPlugin.loader, // Extrae CSS en archivos separados
-          "css-loader", 
-          "sass-loader", 
+          "css-loader",
+          "sass-loader",
         ],
       },
     ],
   },
   plugins: [
-    new VueLoaderPlugin(), 
-    new MiniCssExtractPlugin({ 
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
       filename: "styles.css", // Nombre del archivo de salida CSS
     }),
   ],
   resolve: {
     alias: {
-      vue$: "vue/dist/vue.esm-bundler.js", 
+      vue$: "vue/dist/vue.esm-bundler.js",
     },
-    extensions: [".js", ".json", ".vue"], 
+    extensions: [".js", ".json", ".vue"],
   },
   devServer: {
     static: {

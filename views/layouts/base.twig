@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html {{ site.language_attributes }}>
-    {% block head %}
-        {% include 'partials/head.twig' %}
-    {% endblock %}
+	{% block head %}
+		{% include 'partials/head.twig' %}
+	{% endblock %}
 
-    <body class="{{ body_class }}">
-        {{ function('wp_body_open') }}
-        {# <a class="skip-link screen-reader-text" href="#content">{{ _e('Skip to content') }}</a> #}
-        <header class="header">
-            {% block header %}
-            <nav id="nav-main" class="nav-main">
-                {% include 'partials/menu.twig' with {
-                    items: menu.get_items
-                } %}
-            </nav>
-            {% endblock %}
-        </header>
+	<body class="{{ body_class }}">
+		{{ function('wp_body_open') }}
+		<div id="app">
+			{% block header %}
+				<nav id="nav-main" class="nav-main">
+					<div class="logo">
+						{{ custom_logo|raw }}
+					</div>
+		
+					{% include 'partials/menu.twig' with {
+                            items: menu.get_items
+                        } %}
 
-        <section id="content" class="content-wrapper">
-            <div id="app" class="wrapper">
-                {% block content %}
-                    
-                {% endblock %}
-            </div>
-        </section>
+{# {{dump(menu_links)}} #}
 
-        {% block footer %}
-            {# {% include 'partials/footer.twig' %} #}
-        {% endblock %}
-        {{ function('wp_footer') }}
-        {% do action('get_footer') %}
-    </body>
-</html>
+
+				</nav>
+			{% endblock %}
+
+			<div class="wrapper">
+			 {% block content %}{% endblock %}
+			</div>
+
+			{% block footer %}
+				{# {% include 'partials/footer.twig' %} #}
+			{% endblock %}
+		</div>
+
+			{{ function('wp_footer') }}
+			{% do action('get_footer') %}
+		</body>
+	</html>
