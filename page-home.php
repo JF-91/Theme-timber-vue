@@ -24,6 +24,7 @@ class HomeController
     public function add_to_context($context)
     {
         $post_id = get_queried_object_id();
+        error_log('Post ID: ' . $post_id);
 
         $context['home_text'] = get_post_meta($post_id, '_home_text', true);
         $context['home_textarea'] = get_post_meta($post_id, '_home_textarea', true);

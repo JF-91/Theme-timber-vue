@@ -17,4 +17,23 @@
 
 <separator></separator>
 
+<!-- Mostrar el contenido HTML del documento -->
+
+{% for document in documents %}
+	<h2>{{ document.title }}</h2>
+	<p>
+		<a href="{{ document.document_url }}" target="_blank">Ver Documento PDF</a>
+	</p>
+
+	{% if document.document_html %}
+		<h3>Contenido HTML Convertido</h3>
+		
+		<html-render content="{{ document.document_html|e('html')}}"></html-render>
+	{% endif %}
+{% else %}
+	<p>No hay documentos disponibles.</p>
+{% endfor %}
+
+
 {% endblock %}
+

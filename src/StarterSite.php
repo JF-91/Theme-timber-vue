@@ -4,9 +4,12 @@ namespace App;
 
 use App\GeneralOptions\GeneralOptions;
 use App\Metaboxs\AboutPageMetabox;
+use App\Metaboxs\DocumentUploadMetabox;
 use App\Metaboxs\HomeAdditionalBlockMetabox;
 use App\Metaboxs\HomeBlockMetabox;
-use App\PostTypes\CustomPosTypeLibro;
+use App\Metaboxs\MultipleImageUploadMetabox;
+use App\PostTypes\CustomPosTypeBanner;
+use App\PostTypes\CustomPosTypeUploadDocument;
 use Timber\Post;
 use Timber\Site;
 use Timber\Timber;
@@ -31,6 +34,7 @@ class StarterSite extends Site
 		//admin scripts
 		add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
 
+		add_filter('upload_mimes', array($this, 'custom_upload_mimes'));
 
 		add_filter('timber/context', array($this, 'add_to_context'));
 		add_filter('timber/twig', array($this, 'add_to_twig'));
@@ -86,7 +90,8 @@ class StarterSite extends Site
 	 */
 	public function register_post_types()
 	{
-		CustomPosTypeLibro::register();
+		CustomPosTypeBanner::register();
+		CustomPosTypeUploadDocument::register();
 	}
 
 	/**
@@ -96,11 +101,19 @@ class StarterSite extends Site
 	{
 	}
 
+	public function custom_upload_mimes($mimes)
+	{
+		$mimes['pdf'] = 'application/pdf'; // Permitir archivos PDF
+		return $mimes;
+	}
+
 	public function register_metaboxes()
 	{
 		HomeAdditionalBlockMetabox::init();
 		HomeBlockMetabox::init();
 		AboutPageMetabox::init();
+		MultipleImageUploadMetabox::init();
+		DocumentUploadMetabox::init();
 	}
 
 	/**
