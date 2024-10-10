@@ -41,6 +41,8 @@ class StarterSite extends Site
 		add_filter('timber/twig/environment/options', [$this, 'update_twig_environment_options']);
 
 		add_filter('timber/meta/transform_value', '__return_true');
+		add_filter('use_block_editor_for_post_type', array($this, 'disable_gutenberg_for_post_types'), 10, 2);
+
 
 		//options
 		$this->initialize_general_options();
@@ -284,6 +286,14 @@ class StarterSite extends Site
 	private function initialize_general_options()
 	{
 		new GeneralOptions();
+	}
+
+	public function disable_gutenberg_for_post_types($use_block_editor, $post_type)
+	{
+		if ($post_type === 'page' || $post_type === 'post' || $post_type === 'banner') {
+			return false;
+		}
+		return $use_block_editor;
 	}
 
 }

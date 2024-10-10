@@ -46,6 +46,7 @@ class AboutController
 
                 // Obtener los metadatos
                 $document_meta = [
+                    'content' => get_the_content(),
                     'title' => get_the_title(),
                     'key' => '_is_link_visible',
                     'document_url' => get_post_meta($doc_id, '_document_upload', true),
@@ -61,7 +62,7 @@ class AboutController
 
         wp_reset_postdata();
 
-      
+    
         $context['about_text'] = get_post_meta($post_id, '_about_text', true);
         $context['about_textarea'] = get_post_meta($post_id, '_about_textarea', true);
         $context['about_image'] = get_post_meta($post_id, '_about_image', true);

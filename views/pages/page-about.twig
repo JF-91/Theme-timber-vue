@@ -13,6 +13,11 @@
 	<!-- Mostrar el contenido HTML del documento -->
 
 	{% for document in documents %}
+		{% if document.content|default('')%}
+			{{ document.content|raw }}
+		{% endif %}
+
+
 		{% if document.document_html %}
 			<html-render content="{{ document.document_html|e('html')}}"></html-render>
 
