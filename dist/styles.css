@@ -749,9 +749,24 @@ textarea {
 .html-viewer {
   padding: 0 20px;
 }
-.html-viewer span {
-  font-size: 1.2em;
-  color: black;
+.html-viewer p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+.html-viewer p.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.html-viewer p.list-paragraph:first-child {
+  margin-top: 32px;
+}
+.html-viewer p.list-paragraph:last-child {
+  margin-bottom: 32px;
+}
+.html-viewer div .footer {
+  display: none;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[5].use[0]!./assets/scripts/vue/components/Separator.vue?vue&type=style&index=0&id=2aad150a&lang=scss&scoped=true ***!
