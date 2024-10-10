@@ -3,37 +3,23 @@
 {% block content %}
 
 
-<separator></separator>
+	<separator></separator>
 
-<block-primary
-	headline="{{ about_text }}"
-	textarea="{{ about_textarea }}"
-	image="{{ about_image }}"
-	button-main="{{ about_button_1 }}"
-	button-secondary="{{ about_button_2 }}"
-	link-one={{ about_link_button_1 }}
-	link-two={{ about_link_button_2 }}></block-primary>
+	<block-primary headline="{{ about_text }}" textarea="{{ about_textarea }}" image="{{ about_image }}" button-main="{{ about_button_1 }}" button-secondary="{{ about_button_2 }}" link-one={{ about_link_button_1 }} link-two={{ about_link_button_2 }}></block-primary>
 
 
-<separator></separator>
+	<separator></separator>
 
-<!-- Mostrar el contenido HTML del documento -->
+	<!-- Mostrar el contenido HTML del documento -->
 
-{% for document in documents %}
-	<h2>{{ document.title }}</h2>
-	<p>
-		<a href="{{ document.document_url }}" target="_blank">Ver Documento PDF</a>
-	</p>
+	{% for document in documents %}
+		{% if document.document_html %}
+			<html-render content="{{ document.document_html|e('html')}}"></html-render>
 
-	{% if document.document_html %}
-		<h3>Contenido HTML Convertido</h3>
-		
-		<html-render content="{{ document.document_html|e('html')}}"></html-render>
-	{% endif %}
-{% else %}
-	<p>No hay documentos disponibles.</p>
-{% endfor %}
-
+			<html-render-doc-footer title="{{ document.title }}" link="{{ document.document_url }}"></html-render-doc-footer>
+		{% endif %}
+	{% else %}
+		<p>No hay documentos disponibles.</p>
+	{% endfor %}
 
 {% endblock %}
-

@@ -768,6 +768,26 @@ textarea {
 .html-viewer div .footer {
   display: none;
 }
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[5].use[0]!./assets/scripts/vue/components/HtmlRenderDocFooter.vue?vue&type=style&index=0&id=c3729f92&lang=scss&scoped=true ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.container[data-v-c3729f92] {
+  margin-top: 100px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.link[data-v-c3729f92] {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[5].use[0]!./assets/scripts/vue/components/Separator.vue?vue&type=style&index=0&id=2aad150a&lang=scss&scoped=true ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************/

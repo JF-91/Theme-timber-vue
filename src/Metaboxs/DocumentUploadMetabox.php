@@ -58,11 +58,19 @@ class DocumentUploadMetabox
     {
         $document = get_post_meta($post->ID, '_document_upload', true);
         $html_content = get_post_meta($post->ID, '_document_html', true); // Obtener el contenido HTML convertido
+        // $is_link_visible = get_post_meta($post->ID, '_is_link_visible', true); // Recuperar el estado del checkbox
+
 
         echo '<form id="document-upload-form" method="post" enctype="multipart/form-data">';
         echo '<label for="document_upload">' . __('Upload PDF Document', 'textdomain') . '</label>';
         echo '<input type="file" name="document_upload" accept=".pdf" class="widefat" />';
+        echo '<br> <br>';
+        // echo '<label for="is-link-visible">' . __('Link visible', 'textdomain') . '</label>';
+        // echo '<input type="checkbox" name="is-link-visible" value="1" class="input-checkbox"' . checked($is_link_visible, '1', false) . '/>';
+        // echo '<br><br>';
+
         echo '<button type="button" id="upload-button">' . __('Upload', 'textdomain') . '</button>'; // Botón para subir
+
 
         if ($document) {
             echo '<p>' . __('Uploaded Document:', 'textdomain') . ' <a href="' . esc_url($document) . '" target="_blank">' . basename($document) . '</a></p>';
@@ -96,6 +104,9 @@ class DocumentUploadMetabox
                 formData.append('document_upload', fileInput.files[0]);
                 formData.append('document_upload_nonce', jQuery('input[name="document_upload_nonce"]').val());
 
+                // var checkbox = document.querySelector("input[name='is-link-visible']");
+                // formData.append('is-link-visible', checkbox.checked ? '1' : '0'); // Envío del estado del checkbox
+
                 axios.post("<?php echo admin_url('admin-ajax.php'); ?>", formData, {
                         headers: {
                             'Content-Type': 'multipart/form-data'
@@ -115,7 +126,7 @@ class DocumentUploadMetabox
             });
 
             // Manejar la eliminación del documento
-            document.getElementById("delete-button").addEventListener("click", function() {
+            document.getElementById("delete-button")?.addEventListener("click", function() {
                 if (!confirm("¿Estás seguro de que deseas eliminar este documento?")) {
                     return;
                 }
@@ -146,6 +157,7 @@ class DocumentUploadMetabox
     public static function save_document_metabox()
     {
         error_log('Guardando documento metabox');
+
 
         if (!check_ajax_referer('save_document_upload', 'document_upload_nonce', false)) {
             wp_send_json_error('Nonce inválido.');
@@ -185,6 +197,10 @@ class DocumentUploadMetabox
         } else {
             wp_send_json_error('La conversión a HTML falló o no se generó contenido.');
         }
+
+        // Guardar el estado del checkbox
+        // $is_link_visible = isset($_POST['is-link-visible']) ? sanitize_text_field($_POST['is-link-visible']) : '0';
+        // update_post_meta($post_id, '_is_link_visible', $is_link_visible);
 
         wp_die();
     }

@@ -47,6 +47,7 @@ class AboutController
                 // Obtener los metadatos
                 $document_meta = [
                     'title' => get_the_title(),
+                    'key' => '_is_link_visible',
                     'document_url' => get_post_meta($doc_id, '_document_upload', true),
                     'document_html' => get_post_meta($doc_id, '_document_html', true),
                 ];
