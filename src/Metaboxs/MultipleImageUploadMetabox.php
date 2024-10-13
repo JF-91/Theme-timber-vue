@@ -38,9 +38,9 @@ class MultipleImageUploadMetabox
                 $image_ids_array = explode(',', $image_ids);
 
                 foreach ($image_ids_array as $image_id) {
-                    $image_url = wp_get_attachment_url($image_id);
+                    $image_url = esc_url( wp_get_attachment_url($image_id));
                     echo '<div class="image-preview">';
-                    echo '<img class="multiple-images-upload-image" src="' . esc_url($image_url) . '" />';
+                    echo '<img class="multiple-images-upload-image" src="' . $image_url . '" />';
                     echo '<button type="button" class="remove-image-button" data-id="' . $image_id . '">x</button>';
                     echo '</div>';
                 }

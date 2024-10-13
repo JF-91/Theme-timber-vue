@@ -1,4 +1,5 @@
 FEATURES
 
-- Added Banner for vue and twig, backend wp implemented postype
-- Added Block firt for vue and twig, backend wp implemented metaboxes
+- Added Banner frontend.
+- Added Banner for vue and twig, backend wp implemented postype.
+- Added Block firt for vue and twig, backend wp implemented metaboxes.

@@ -10,7 +10,13 @@
 			{% block header %}
 				<nav id="nav-main" class="nav-main">
 					<div class="logo">
-						{{ custom_logo|raw }}
+						<a href="{{ home_url }}">
+							{% if logo_url %}
+								<img src="{{ logo_url }}" alt="{{ site.logo.alt }}" with="150" height="150">
+							{% else %}
+								{{ site.title }}
+							{% endif %}
+						</a>
 					</div>
 		
 					{% include 'partials/menu.twig' with {

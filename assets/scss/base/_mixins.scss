@@ -1,28 +1,74 @@
 @import 'variables';
-// Small devices
+@import 'functions';
+
+// Small devices old (landscape phones)
+
 @mixin sm {
   @media (max-width: #{$screen-sm-min}) {
       @content;
   }
 }
 
-// Medium devices
+// Medium devices (tablets)
 @mixin md {
   @media (max-width: #{$screen-md-min}) {
       @content;
   }
 }
 
-// Large devices
+// Large devices (desktops)
 @mixin lg {
   @media (max-width: #{$screen-lg-min}) {
       @content;
   }
 }
 
-// Extra large devices
+// Extra large devices  (large desktops)
 @mixin xl {
   @media (max-width: #{$screen-xl-min}) {
       @content;
+  }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// (mobile first)
+
+// Mixin para pantallas pequeñas y superiores (mobile-first)
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: $screen-sm-min) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (min-width: $screen-md-min) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (min-width: $screen-lg-min) {
+      @content;
+    }
+  } @else if $breakpoint == extra-large {
+    @media (min-width: $screen-xl-min) {
+      @content;
+    }
+  } @else if $breakpoint == palm {
+    @media (max-width: $screen-palm) {
+      @content;
+    }
+  } @else {
+    @warn "No existe el breakpoint `#{$breakpoint}`.";
+  }
+}
+
+
+///// clamp for font-size ////////////////////////
+@mixin respond-to($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+  
+  @if $value {
+    @media (min-width: #{$value}) {
+      @content;
+    }
+  } @else {
+    @warn "No breakpoint found for `#{$breakpoint}`.";
   }
 }

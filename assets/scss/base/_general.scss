@@ -1,61 +1,23 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "typography";
 
-html{
-  font-family: $font-inter;
+html {
+  font-family: $font-lato;
   font-size: $body-default;
-  background-color: #C5E79A;
+  background-color: #c5e79a;
   scroll-behavior: smooth;
-  
+  font-size: 100%;
+
   @include md {
     font-size: $body-small;
   }
 }
 
-
 // html elements
 
-footer, header, nav, section, main{
-    display: block;
-  }
-  
-  body{
-    line-height: 1;
-    color: $font-color-normal;
-  }
-  
-  ol, ul{
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: $body-default;
-    color: inherit;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-  
-  blockquote, q{
-    quotes: none;
-  }
-  
-  blockquote:before, blockquote:after, q:before, q:after{
-    content: '';
-    content: none;
-  }
-  
-  table{
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  
-  input{
-    -webkit-appearance: none;
-    border-radius: 0;
-}
-
-img{
+.image {
   display: block;
   object-fit: cover;
   object-position: center;
@@ -63,6 +25,25 @@ img{
   height: 100%;
   border-radius: 32px;
 
+  @include respond-to(small) {
+    width: 80%;
+  }
+
+  @include respond-to(medium) {
+    width: 70%;
+  }
+
+  @include respond-to(large) {
+    width: 60%;
+  }
+
+  @include respond-to(extra-large) {
+    width: 50%;
+  }
+
+  @include respond-to(palm) {
+    width: 100%;
+  }
 }
 
 nav {
@@ -77,20 +58,18 @@ nav {
   }
 
   a {
-    font-size: $font-size-medium;
     font-weight: 500;
     color: black;
   }
 
   .logo {
-    width: 100px;
+    width: 6.25rem;
   }
 
   .menu {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem; //30px
   }
-
 }
 
 .wrapper {
@@ -122,63 +101,19 @@ nav {
   }
 }
 
-.headline {
-  font-size: $font-size-xl-large;
-  font-weight: 500;
-  line-height: 120%; //153.6px
-  letter-spacing: -2px; 
-
-  @include lg {
-    font-size: $font-size-large;
-  }
-
-  @include md {
-    font-size: $font-size-medium;
-  }
-
-  &.large{
-    font-size: $font-size-large;
-    @include lg {
-      font-size: $font-size-medium;
-    }
-  }
-
-  &.medium {
-    font-size: $font-size-medium;
-    @include lg {
-      font-size: $font-size-h2;
-    }
-  }
-  
-  &.h1 {
-    font-size: $font-size-h1;
-    @include lg {
-      font-size: $font-size-h2;
-    }
-  }
-
-  &.h2 {
-    font-size: $font-size-h2;
-    @include lg {
-      font-size: $font-size-h3;
-    }
-  }
-
-  &.h3 {
-    font-size: $font-size-h3;
-    @include lg {
-      font-size: $font-size-h4;
-    }
-  }
-}
-
 .grid-container-2c {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 
-  @include lg {
-    grid-template-columns: 1fr;
+  @include respond-to(medium) {
+      display: flex;
+      flex-direction: column;
+      grid-area: 30px;
+
+      &.column-reverse {
+        flex-direction: column-reverse;
+      }
   }
 }
 
@@ -187,13 +122,11 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
-  @include xl {
+  @include respond-to(large) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
-
-  @include md {
+  @include respond-to(medium) {
     grid-template-columns: 1fr;
   }
 }

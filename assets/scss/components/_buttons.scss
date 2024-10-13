@@ -1,106 +1,39 @@
 @import '../base/variables';
+@import '../base/mixins';
+@import '../base/functions';
 
-.btn-rectangle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10px;
-    background-color: $gray-normal-90;
-    
-    color: $color-white;
+// Estilos generales para el botón
+.button {
+  padding: 10px 20px;
+  font-size: 1rem; // Tamaño de fuente base
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 
-    &.is-gray{
-        background-color: $gray-normal-50;
-        color: $gray-warm-90;
-    }
+  // Estilos para dispositivos pequeños y superiores
+  @include respond-to(small) {
+    font-size: 1.1rem; // Aumenta el tamaño de fuente
+  }
 
-    &.has-blue-border{
-        border: 2px solid $borderBlue-clear;
-    }
+  // Estilos para dispositivos medianos y superiores
+  @include respond-to(medium) {
+    font-size: 1.2rem; // Aumenta el tamaño de fuente
+  }
 
-    &.has-purple-border{
-        border: 2px solid $borderPurple-clear;
-    }
+  // Estilos para dispositivos grandes y superiores
+  @include respond-to(large) {
+    font-size: 1.3rem; // Aumenta el tamaño de fuente
+  }
 
-    &.has-magenta-border{
-        border: 2px solid $borderMagenta-clear;
-    }
+  // Estilos para dispositivos extra grandes
+  @include respond-to(extra-large) {
+    font-size: 1.4rem; // Aumenta el tamaño de fuente
+  }
 
-    &.has-yellow-border{
-        border: 2px solid $borderYellow-light;
-    }
-
-    &.has-green-border{
-        border: 2px solid $borderGreen-clear;
-
-        &:hover{
-            background-color: $gray-coll-80;
-        }
-    }
-}
-
-.btn-rectangle-normal {
-    width: 96px;
-    height: 32px;
-    flex-shrink: 0;
-    background-color: $gray-normal-100;
-    color: $color-white;
-
-    &.is-gray{
-        background-color: $gray-normal-50;
-        color: $gray-warm-90;
-    }
-
-    &.has-blue-border{
-        border: 1px solid $borderBlue-clear;
-    }
-
-    &.has-purple-border{
-        border: 1px solid $borderPurple-clear;
-    }
-
-    &.has-magenta-border{
-        border: 1px solid $borderMagenta-clear;
-    }
-
-    &.has-yellow-border{
-        border: 1px solid $borderYellow-light;
-    }
-
-    &.has-green-border{
-        border: 1px solid $borderGreen-clear;
-    }
-}
-
-.btn-rectangle-large {
-    width: 230px;
-    height: 32px;
-    flex-shrink: 0;
-    background-color: $gray-normal-100;
-    color: $color-white;
-
-    &.is-gray{
-        background-color: $gray-normal-50;
-        color: $gray-warm-90;
-    }
-
-    &.has-blue-border{
-        border: 1px solid $borderBlue-clear;
-    }
-
-    &.has-purple-border{
-        border: 1px solid $borderPurple-clear;
-    }
-
-    &.has-magenta-border{
-        border: 1px solid $borderMagenta-clear;
-    }
-
-    &.has-yellow-border{
-        border: 1px solid $borderYellow-light;
-    }
-
-    &.has-green-border{
-        border: 1px solid $borderGreen-clear;
-    }
+  // Estilos para dispositivos pequeños (por debajo de 370px)
+  @include respond-to(palm) {
+    font-size: 0.9rem; // Reduce el tamaño de fuente
+  }
 }
