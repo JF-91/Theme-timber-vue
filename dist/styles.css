@@ -37,11 +37,127 @@
 /*!********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (9) ***!
   \********************************************************************************************************************/
-*, *:before, *:after {
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (10) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (11) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (12) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (13) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (14) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (15) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (16) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (17) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (18) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (19) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (20) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (21) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (22) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (23) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (24) ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;1,300&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/main.scss (25) ***!
+  \*********************************************************************************************************************/
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -53,92 +169,28 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   text-size-adjust: none;
 }
 
-.is-big {
-  width: 70%;
-}
-
-.is-middle {
-  width: 50%;
-}
-
-.is-small {
-  width: 30%;
-}
-
-.is-big {
-  width: 70%;
-}
-
-.is-middle {
-  width: 50%;
-}
-
-.is-small {
-  width: 30%;
-}
-
-.is-big {
-  width: 70%;
-}
-
-.is-middle {
-  width: 50%;
-}
-
-.is-small {
-  width: 30%;
-}
-
-.is-big {
-  width: 70%;
-}
-
-.is-middle {
-  width: 50%;
-}
-
-.is-small {
-  width: 30%;
-}
-
-html {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  background-color: #C5E79A;
-  scroll-behavior: smooth;
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-footer, header, nav, section, main {
+footer,
+header,
+nav,
+section,
+main {
   display: block;
 }
 
-body {
-  line-height: 1;
-  color: #222222;
-}
-
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  font-size: 20px;
-  color: inherit;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -153,13 +205,409 @@ input {
   border-radius: 0;
 }
 
-img {
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+body {
+  font-size: clamp(1rem, 1vw + 1rem, 1.25rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+  color: #222222;
+}
+@media (min-width: 576px) {
+  body {
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1.125rem);
+    line-height: clamp(1.25rem, 1.5vw + 1.5rem, 1.75rem);
+  }
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw + 1.5rem, 2rem);
+  line-height: clamp(2rem, 1.5vw + 1.5rem, 2.5rem);
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: clamp(1.75rem, 3vw + 1.5rem, 2.25rem);
+    line-height: clamp(2.25rem, 1.5vw + 1.5rem, 2.75rem);
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: clamp(1rem, 1.25vw + 1rem, 1.5rem);
+    line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: clamp(1.625rem, 2.5vw + 1.5rem, 2.125rem);
+    line-height: clamp(2.125rem, 1.5vw + 1.5rem, 2.625rem);
+  }
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.5vw + 1.25rem, 1.75rem);
+  line-height: clamp(1.75rem, 1.5vw + 1.5rem, 2.25rem);
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: clamp(1.375rem, 2vw + 1.25rem, 1.875rem);
+    line-height: clamp(1.875rem, 1.5vw + 1.5rem, 2.375rem);
+  }
+}
+
+p {
+  font-size: clamp(1rem, 1vw + 1rem, 1.125rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+}
+@media (min-width: 992px) {
+  p {
+    font-size: clamp(1.0625rem, 1.2vw + 1rem, 1.1875rem);
+    line-height: clamp(1.5625rem, 1.5vw + 1.5rem, 2.0625rem);
+  }
+}
+
+span {
+  font-size: clamp(1rem, 1vw + 1rem, 1.125rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+}
+@media (min-width: 576px) {
+  span {
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1rem);
+    line-height: clamp(1.25rem, 1.5vw + 1.5rem, 1.75rem);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: clamp(1rem, 1vw + 1rem, 1.125rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+}
+@media (min-width: 576px) {
+  a {
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1rem);
+    line-height: clamp(1.25rem, 1.5vw + 1.5rem, 1.75rem);
+  }
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
+body {
+  font-size: clamp(1rem, 1vw + 1rem, 1.25rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+  color: #222222;
+}
+@media (min-width: 576px) {
+  body {
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1.125rem);
+    line-height: clamp(1.25rem, 1.5vw + 1.5rem, 1.75rem);
+  }
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw + 1.5rem, 2rem);
+  line-height: clamp(2rem, 1.5vw + 1.5rem, 2.5rem);
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: clamp(1.75rem, 3vw + 1.5rem, 2.25rem);
+    line-height: clamp(2.25rem, 1.5vw + 1.5rem, 2.75rem);
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: clamp(1rem, 1.25vw + 1rem, 1.5rem);
+    line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: clamp(1.625rem, 2.5vw + 1.5rem, 2.125rem);
+    line-height: clamp(2.125rem, 1.5vw + 1.5rem, 2.625rem);
+  }
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.5vw + 1.25rem, 1.75rem);
+  line-height: clamp(1.75rem, 1.5vw + 1.5rem, 2.25rem);
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: clamp(1.375rem, 2vw + 1.25rem, 1.875rem);
+    line-height: clamp(1.875rem, 1.5vw + 1.5rem, 2.375rem);
+  }
+}
+
+p {
+  font-size: clamp(1rem, 1vw + 1rem, 1.125rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+}
+@media (min-width: 992px) {
+  p {
+    font-size: clamp(1.0625rem, 1.2vw + 1rem, 1.1875rem);
+    line-height: clamp(1.5625rem, 1.5vw + 1.5rem, 2.0625rem);
+  }
+}
+
+span {
+  font-size: clamp(1rem, 1vw + 1rem, 1.125rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+}
+@media (min-width: 576px) {
+  span {
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1rem);
+    line-height: clamp(1.25rem, 1.5vw + 1.5rem, 1.75rem);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: clamp(1rem, 1vw + 1rem, 1.125rem);
+  line-height: clamp(1.5rem, 1.5vw + 1.5rem, 2rem);
+}
+@media (min-width: 576px) {
+  a {
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1rem);
+    line-height: clamp(1.25rem, 1.5vw + 1.5rem, 1.75rem);
+  }
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  background-color: #c5e79a;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 1.125rem;
+  }
+}
+
+.image {
   display: block;
   object-fit: cover;
   object-position: center;
   width: 100%;
   height: 100%;
   border-radius: 32px;
+}
+@media (min-width: 576px) {
+  .image {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .image {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .image {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .image {
+    width: 50%;
+  }
+}
+@media (min-width: 370px) {
+  .image {
+    width: 100%;
+  }
 }
 
 nav {
@@ -175,16 +623,15 @@ nav {
   }
 }
 nav a {
-  font-size: 80px;
   font-weight: 500;
   color: black;
 }
 nav .logo {
-  width: 100px;
+  width: 6.25rem;
 }
 nav .menu {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .wrapper {
@@ -217,71 +664,19 @@ nav .menu {
   border-radius: 32px;
 }
 
-.headline {
-  font-size: 128px;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: -2px;
-}
-@media (max-width: 992px) {
-  .headline {
-    font-size: 96px;
-  }
-}
-@media (max-width: 768px) {
-  .headline {
-    font-size: 80px;
-  }
-}
-.headline.large {
-  font-size: 96px;
-}
-@media (max-width: 992px) {
-  .headline.large {
-    font-size: 80px;
-  }
-}
-.headline.medium {
-  font-size: 80px;
-}
-@media (max-width: 992px) {
-  .headline.medium {
-    font-size: 48px;
-  }
-}
-.headline.h1 {
-  font-size: 64px;
-}
-@media (max-width: 992px) {
-  .headline.h1 {
-    font-size: 48px;
-  }
-}
-.headline.h2 {
-  font-size: 48px;
-}
-@media (max-width: 992px) {
-  .headline.h2 {
-    font-size: 36px;
-  }
-}
-.headline.h3 {
-  font-size: 36px;
-}
-@media (max-width: 992px) {
-  .headline.h3 {
-    font-size: 24px;
-  }
-}
-
 .grid-container-2c {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-@media (max-width: 992px) {
+@media (min-width: 768px) {
   .grid-container-2c {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    grid-area: 30px;
+  }
+  .grid-container-2c.column-reverse {
+    flex-direction: column-reverse;
   }
 }
 
@@ -290,12 +685,12 @@ nav .menu {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 992px) {
   .grid-container-3c {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .grid-container-3c {
     grid-template-columns: 1fr;
   }
@@ -313,89 +708,75 @@ nav .menu {
   width: 30%;
 }
 
-.btn-rectangle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 10px;
-  background-color: #262626;
-  color: #FFFFFF;
-}
-.btn-rectangle.is-gray {
-  background-color: #8d8d8d;
-  color: #272525;
-}
-.btn-rectangle.has-blue-border {
-  border: 2px solid #0043CE;
-}
-.btn-rectangle.has-purple-border {
-  border: 2px solid #A56EFF;
-}
-.btn-rectangle.has-magenta-border {
-  border: 2px solid #9F1853;
-}
-.btn-rectangle.has-yellow-border {
-  border: 2px solid #FDDC69;
-}
-.btn-rectangle.has-green-border {
-  border: 2px solid #42BE65;
-}
-.btn-rectangle.has-green-border:hover {
-  background-color: #343a3f;
+.is-big {
+  width: 70%;
 }
 
-.btn-rectangle-normal {
-  width: 96px;
-  height: 32px;
-  flex-shrink: 0;
-  background-color: #161616;
-  color: #FFFFFF;
-}
-.btn-rectangle-normal.is-gray {
-  background-color: #8d8d8d;
-  color: #272525;
-}
-.btn-rectangle-normal.has-blue-border {
-  border: 1px solid #0043CE;
-}
-.btn-rectangle-normal.has-purple-border {
-  border: 1px solid #A56EFF;
-}
-.btn-rectangle-normal.has-magenta-border {
-  border: 1px solid #9F1853;
-}
-.btn-rectangle-normal.has-yellow-border {
-  border: 1px solid #FDDC69;
-}
-.btn-rectangle-normal.has-green-border {
-  border: 1px solid #42BE65;
+.is-middle {
+  width: 50%;
 }
 
-.btn-rectangle-large {
-  width: 230px;
-  height: 32px;
-  flex-shrink: 0;
-  background-color: #161616;
-  color: #FFFFFF;
+.is-small {
+  width: 30%;
 }
-.btn-rectangle-large.is-gray {
-  background-color: #8d8d8d;
-  color: #272525;
+
+.is-big {
+  width: 70%;
 }
-.btn-rectangle-large.has-blue-border {
-  border: 1px solid #0043CE;
+
+.is-middle {
+  width: 50%;
 }
-.btn-rectangle-large.has-purple-border {
-  border: 1px solid #A56EFF;
+
+.is-small {
+  width: 30%;
 }
-.btn-rectangle-large.has-magenta-border {
-  border: 1px solid #9F1853;
+
+.is-big {
+  width: 70%;
 }
-.btn-rectangle-large.has-yellow-border {
-  border: 1px solid #FDDC69;
+
+.is-middle {
+  width: 50%;
 }
-.btn-rectangle-large.has-green-border {
-  border: 1px solid #42BE65;
+
+.is-small {
+  width: 30%;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  .button {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .button {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .button {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 370px) {
+  .button {
+    font-size: 0.9rem;
+  }
 }
 
 .is-big {
@@ -650,6 +1031,18 @@ textarea {
   width: 30%;
 }
 
+.is-big {
+  width: 70%;
+}
+
+.is-middle {
+  width: 50%;
+}
+
+.is-small {
+  width: 30%;
+}
+
 .link-button-text {
   display: block;
   width: fit-content;
@@ -657,7 +1050,7 @@ textarea {
   text-transform: uppercase;
   cursor: pointer;
   border-bottom: 1px solid black;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .nav-container {
@@ -787,6 +1180,88 @@ textarea {
   text-underline-offset: 8px;
   font-size: 1.125rem;
   font-weight: 700;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[5].use[0]!./assets/scripts/vue/components/ImageCarrusel.vue?vue&type=style&index=0&id=04422983&scoped=true&lang=scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel[data-v-04422983] {
+  position: relative;
+  width: 100%;
+  max-width: 37.5rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel-container[data-v-04422983] {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 600px;
+  width: 100%;
+}
+.carousel-slide[data-v-04422983] {
+  display: flex;
+  align-items: center;
+}
+.carousel-item[data-v-04422983] {
+  min-width: 100%;
+}
+.carousel-image[data-v-04422983] {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.carousel-button[data-v-04422983] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.625rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+.prev[data-v-04422983] {
+  left: 0.625rem;
+}
+.next[data-v-04422983] {
+  right: 0.625rem;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[5].use[0]!./assets/scripts/vue/components/ImageCustom.vue?vue&type=style&index=0&id=5f83cfde&lang=scss&scoped=true ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel-image[data-v-5f83cfde] {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-image[data-v-5f83cfde] {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[5].use[0]!./assets/scripts/vue/components/ImageList.vue?vue&type=style&index=0&id=68f23e84&lang=scss&scoped=true ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.container[data-v-68f23e84] {
+  margin-top: 100px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container[data-v-68f23e84] {
+  margin: 10px;
+  max-width: 300px;
+  min-height: 150px;
+  height: 100%;
+}
+.image[data-v-68f23e84] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[5].use[0]!./assets/scripts/vue/components/Separator.vue?vue&type=style&index=0&id=2aad150a&lang=scss&scoped=true ***!

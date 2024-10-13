@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use Timber\Timber;
+use WP_Query;
 
 class HomeController
 {
@@ -24,7 +25,48 @@ class HomeController
     public function add_to_context($context)
     {
         $post_id = get_queried_object_id();
-        error_log('Post ID: ' . $post_id);
+
+        $args = [
+            'post_type' => 'banner',
+            'posts_per_page' => -1,
+            'post_status' => 'publish',
+        ];
+
+        $banner_query = new WP_Query($args);
+        $banners = [];
+
+
+        if ($banner_query->have_posts()) {
+            while ($banner_query->have_posts()) {
+                $banner_query->the_post();
+                $image_id = get_the_ID();
+             
+                $image_ids = get_post_meta($image_id, '_mutiple_image_ids', true);
+
+                $image_ids = array_map('trim', explode(',', $image_ids));
+
+                $image_urls = [];
+                foreach ($image_ids as $id) {
+                    $url = wp_get_attachment_url($id, 'thumbnail', true);
+                    if ($url) {
+                        $image_urls[] = esc_url($url);
+                    }
+                }
+                
+                // Obtener los metadatos
+                $banners_meta = [
+                    'title' => get_the_title(),
+                    'image_ids' => $image_ids,
+                    'image_urls' => $image_urls,
+                ];
+
+                $banners[] = $banners_meta;
+            }
+        }
+
+        $context['banners'] = $banners;
+
+        wp_reset_postdata();
 
         $context['home_text'] = get_post_meta($post_id, '_home_text', true);
         $context['home_textarea'] = get_post_meta($post_id, '_home_textarea', true);

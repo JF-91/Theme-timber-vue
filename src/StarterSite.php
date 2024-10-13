@@ -8,8 +8,10 @@ use App\Metaboxs\DocumentUploadMetabox;
 use App\Metaboxs\HomeAdditionalBlockMetabox;
 use App\Metaboxs\HomeBlockMetabox;
 use App\Metaboxs\MultipleImageUploadMetabox;
+use App\Metaboxs\UploadDocWordMetabox;
 use App\PostTypes\CustomPosTypeBanner;
 use App\PostTypes\CustomPosTypeUploadDocument;
+use App\PostTypes\CustomPosTypeUploadDocWordMetabox;
 use Timber\Post;
 use Timber\Site;
 use Timber\Timber;
@@ -33,6 +35,7 @@ class StarterSite extends Site
 
 		//admin scripts
 		add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
+
 
 		add_filter('upload_mimes', array($this, 'custom_upload_mimes'));
 
@@ -94,6 +97,7 @@ class StarterSite extends Site
 	{
 		CustomPosTypeBanner::register();
 		CustomPosTypeUploadDocument::register();
+		CustomPosTypeUploadDocWordMetabox::register();
 	}
 
 	/**
@@ -116,6 +120,7 @@ class StarterSite extends Site
 		AboutPageMetabox::init();
 		MultipleImageUploadMetabox::init();
 		DocumentUploadMetabox::init();
+		UploadDocWordMetabox::init();
 	}
 
 	/**
@@ -130,9 +135,22 @@ class StarterSite extends Site
 		$context['site']  = $this;
 		$context['theme_url'] = get_template_directory_uri();
 		$context['site_url'] = site_url();
-		$context['custom_logo'] = get_custom_logo();
+		$context['logo_with_tag'] = get_custom_logo();
+		$context['logo_url'] = $this->get_logo_url();
 		$context['menu_links'] = $this->get_menu_links("menu");
+		$context['home_url'] = $this->home_url();
 		return $context;
+	}
+
+	public function home_url() 
+	{
+		return home_url();
+	}
+	public function get_logo_url()
+	{
+		$custom_logo_id = get_theme_mod('custom_logo');
+		$logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+		return $logo[0];
 	}
 
 	public function theme_supports()
@@ -183,7 +201,7 @@ class StarterSite extends Site
 			'custom-logo', 
 				array(
 					'height'      => 100,
-					'width'       => 400,
+					'width'       => 4000,
 					'flex-height' => true,
 					'flex-width'  => true,
 		));
@@ -290,7 +308,7 @@ class StarterSite extends Site
 
 	public function disable_gutenberg_for_post_types($use_block_editor, $post_type)
 	{
-		if ($post_type === 'page' || $post_type === 'post' || $post_type === 'banner') {
+		if ($post_type === 'page' || $post_type === 'post' || $post_type === 'banner' || $post_type === 'document_word') {
 			return false;
 		}
 		return $use_block_editor;
